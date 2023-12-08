@@ -5,18 +5,18 @@ const userSchema = new Schema(
   {
     email: {
       type: String,
-      required: [true, "Email is required."],
+      required: [true, "Email obligatoire."],
       unique: true,
       lowercase: true,
       trim: true,
     },
     password: {
       type: String,
-      required: [true, "Password is required."],
+      required: [true, "Mot de passe obligatoire."],
     },
     name: {
       type: String,
-      required: [true, "Name is required."],
+      required: [true, "Nom obligatoire."],
     },
   },
   {
